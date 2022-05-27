@@ -1,18 +1,15 @@
-import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
 import Head from "next/head";
 
-const Home: NextPage = () => {
+export const About = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
-        <meta name="keywords" content="ninjas" />
+        <title>About</title>
+        <meta name="keywords" content="about ninjas" />
       </Head>
       <div>
-        <h1 className={styles.title}>Home page</h1>
-        <p className={styles.text}>
+        <h1>About</h1>
+        <p>
           integer vitae lectus vel nunc luctus posuere. Mauris vel rhoncus
           ipsum. Donec mi nisl, lobortis nec elementum at, scelerisque sit amet
           urna. Ut sed fringilla ipsum. Duis elementum faucibus mi, nec eleifend
@@ -27,12 +24,8 @@ const Home: NextPage = () => {
           mauris vel viverra. Donec cursus libero eu sapien malesuada interdum.
           Nulla felis ligula, dictum eu urna vel, accumsan pretium augue.
         </p>
-        <Link href="/ninjas">
-          <a className={styles.btn}>See Ninja Listing</a>
-        </Link>
       </div>
     </>
   );
 };
-
-export default Home;
+export default About;
